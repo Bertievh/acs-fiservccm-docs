@@ -1,14 +1,18 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+/** @type {import('@docusaurus/types').Config} */
 module.exports = {
   title: 'Continuous Help',
   tagline: 'ACS Fiserv CCM Connector',
   url: 'https://help.smatechnologies.com',
   baseUrl: '/opcon/connectors/acs-fiservccm/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'smatechnologies',
   projectName: 'acs-fiservccm-docs',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   themeConfig: {
     navbar: {
       title: 'Help',
@@ -28,7 +32,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          breadcrumbs: false,
+          breadcrumbs: true,
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
@@ -43,11 +47,5 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-//    [
-//      require.resolve('@cmfcmf/docusaurus-search-local'), 
-//      {
-//      }
-//    ],
-  ],
+  plugins: [],
 };
