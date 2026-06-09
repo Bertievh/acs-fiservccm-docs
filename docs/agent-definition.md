@@ -18,7 +18,7 @@ tags:
 
 Before OpCon can submit jobs to the Fiserv CCM database, you must define two objects in Solution Manager: a FiservCCM script that contains the error checking information, and an agent definition that references that script.
 
-- Use agent-scripts.md to assist with creating the error checking script. See [Agent Scripts](./agent-scripts.md).
+- Use agent-scripts.md to assist with creating the error checking script. 
 
 All definitions are performed in Solution Manager.
 
